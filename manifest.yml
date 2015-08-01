@@ -1,6 +1,10 @@
+declared-services:
+  personality-insights-service-standard:
+    label: personality_insights
+    plan: standard
 applications:
 - services:
-  - personality-insights-service
+  - personality-insights-service-standard
   - mongodb
   name: your-celebrity-match
   command: node app.js
